@@ -20,71 +20,6 @@ const Carousel = () => {
         </div>
       </div>
       <div className="owl-carousel-img owl-carousel owl-theme gallery-img">
-        {/* <a
-          data-fancybox="gallery-0"
-          href="images/lntevaraheights-Gallery-Badminton.webp"
-        >
-          {" "}
-          <img
-            data-src="../images/lntevaraheights-Gallery-Badminton.webp"
-            loading="lazy"
-            className="gallery-thumb ls-is-cached lazyloaded"
-            src="images/lntevaraheights-Gallery-Badminton.webp"
-            alt="logo"
-          />
-        </a>
-        <a
-          data-fancybox="gallery-0"
-          href="images/lntevaraheights-Gallery-Banquet.webp"
-        >
-          {" "}
-          <img
-            data-src="../images/lntevaraheights-Gallery-Banquet.webp"
-            loading="lazy"
-            className="gallery-thumb ls-is-cached lazyloaded"
-            src="images/lntevaraheights-Gallery-Banquet.webp"
-            alt="logo"
-          />
-        </a>
-        <a
-          data-fancybox="gallery-0"
-          href="images/lntevaraheights-Gallery-Bedroom.webp"
-        >
-          {" "}
-          <img
-            data-src="../images/lntevaraheights-Gallery-Bedroom.webp"
-            loading="lazy"
-            className="gallery-thumb ls-is-cached lazyloaded"
-            src="images/lntevaraheights-Gallery-Bedroom.webp"
-            alt="logo"
-          />
-        </a>
-        <a
-          data-fancybox="gallery-0"
-          href="images/lntevaraheights-Gallery-Co-Working-Pods.webp"
-        >
-          {" "}
-          <img
-            data-src="../images/lntevaraheights-Gallery-Co-Working-Pods.webp"
-            loading="lazy"
-            className="gallery-thumb ls-is-cached lazyloaded"
-            src="images/lntevaraheights-Gallery-Co-Working-Pods.webp"
-            alt="logo"
-          />
-        </a>
-        <a
-          data-fancybox="gallery-0"
-          href="images/lntevaraheights-Gallery-Creche.webp"
-        >
-          {" "}
-          <img
-            data-src="../images/lntevaraheights-Gallery-Creche.webp"
-            loading="lazy"
-            className="gallery-thumb ls-is-cached lazyloaded"
-            src="images/lntevaraheights-Gallery-Creche.webp"
-            alt="logo"
-          />
-        </a> */}
         <a data-fancybox="gallery-0" href="images/g4.webp">
           {" "}
           <img
@@ -125,45 +60,6 @@ const Carousel = () => {
             alt="logo"
           />
         </a>
-        {/* <a
-          data-fancybox="gallery-0"
-          href="images/lntevaraheights-Gallery-Study-Arena.webp"
-        >
-          {" "}
-          <img
-            data-src="../images/lntevaraheights-Gallery-Study-Arena.webp"
-            loading="lazy"
-            className="gallery-thumb ls-is-cached lazyloaded"
-            src="images/lntevaraheights-Gallery-Study-Arena.webp"
-            alt="logo"
-          />
-        </a>
-        <a
-          data-fancybox="gallery-0"
-          href="images/lntevaraheights-Gallery-Swimming-pool-view.webp"
-        >
-          {" "}
-          <img
-            data-src="../images/lntevaraheights-Gallery-Swimming-pool-view.webp"
-            loading="lazy"
-            className="gallery-thumb ls-is-cached lazyloaded"
-            src="images/lntevaraheights-Gallery-Swimming-pool-view.webp"
-            alt="logo"
-          />
-        </a>
-        <a
-          data-fancybox="gallery-0"
-          href="images/lntevaraheights-Gallery-Yoga.webp"
-        >
-          {" "}
-          <img
-            data-src="../images/lntevaraheights-Gallery-Yoga.webp"
-            loading="lazy"
-            className="gallery-thumb ls-is-cached lazyloaded"
-            src="images/lntevaraheights-Gallery-Yoga.webp"
-            alt="logo"
-          />
-        </a> */}
       </div>
       <div className="col-12">
         <button

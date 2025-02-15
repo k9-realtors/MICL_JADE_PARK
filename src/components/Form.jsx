@@ -15,9 +15,12 @@ function Form() {
   const { showModal, handleCloseModal } = useGlobalContext();
 
   const handleRedirect = () => {
+    setIsSubmitting(false);
+    setName("");
+    setNumber("");
     window.location.href = "/thankyou.html"; // Navigate to thankyou.html
   };
-  const emailSend = () => {
+  const emailSend = async () => {
     const serviceId = "service_qu5h6rr";
     const templateId = "template_w7n6s6a";
     const publicKey = "g30AfEaFqUQrebkdO";
@@ -29,19 +32,11 @@ function Form() {
       from_website: "MICL Jade Park",
     };
 
-    emailjs
-      .send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        console.log("email sent successfully", response);
-        setName("");
-        setNumber("");
-        handleCloseModal();
-        handleRedirect();
-        // window.open("http://lntevara.co.in/thankyou.html", "_self");
-      })
-      .catch((error) => {
-        console.log("error sending email", error);
-      });
+    try {
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+    } catch (error) {
+      console.log("Error sending API request", error);
+    }
   };
 
   const apiTest = async () => {
@@ -55,22 +50,15 @@ function Form() {
       project_name: "MICL Jade Park",
     };
     console.log("payload: ", data);
-    {
-      /*axios
-      .post("https://api.k9realtors.com/api/V1/lead_create", data)
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log("error", error);
-      });*/
-    }
     try {
       const response = await axios.post(
         "https://api.k9realtors.com/api/V1/lead_create",
         data
       );
       console.log(response);
+      if (response.status === 200) {
+        localStorage.setItem("apiPhone", data.MobileNo);
+      }
     } catch (error) {
       console.log("Error sending API request", error);
     }
@@ -80,13 +68,16 @@ function Form() {
     if (isSubmitting) return;
     setIsSubmitting(true);
 
-    await apiTest();
-    // await emailSend();
+    if (localStorage.getItem("apiPhone") === countryCode + number) {
+      handleRedirect();
+      return;
+    }
 
-    setIsSubmitting(false);
-    setName("");
-    setNumber("");
+    await apiTest();
+    await emailSend();
+
     handleRedirect();
+    return;
   };
 
   return (

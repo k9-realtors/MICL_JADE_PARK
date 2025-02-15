@@ -89,6 +89,7 @@ const AboutDeveloper = () => {
         data-redirect="enquiry"
         data-toggle="modal"
         data-target="#enqModal"
+        onClick={handleShowModal}
       >
         Chat with us
       </button>

@@ -99,7 +99,7 @@ code {
 }
 
 /* Responsive design */
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .contact-actions {
     flex-direction: column;
     width: 100%;
@@ -314,7 +314,7 @@ code {
   height: 30%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .pricing-div {
     display: flex;
     flex-direction: column;

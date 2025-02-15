@@ -11,10 +11,8 @@ import Footer from "./components/Footer";
 import Form from "./components/Form";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-// import InfoBox from "./components/InfoBox";
 import StripSection from "./components/StripSection";
 import VirtualTour from "./components/VirtualTour";
-// import VirtualTourRequest from "./components/VirtualTourRequest";
 import Pricing from "./components/Pricing";
 import NewForm from "./components/NewForm";
 
@@ -24,14 +22,12 @@ function App() {
       <Header />
       <Hero />
       <NewForm />
-      {/* <InfoBox /> */}
       <StripSection />
       <Details />
       <VirtualTour />
       <Pricing />
       <FloorPlan />
       <Amenities />
-      {/* <VirtualTourRequest /> */}
       <Carousel />
       <DigitalCopy />
       <AboutDeveloper />

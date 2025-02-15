@@ -1,28 +1,28 @@
 import React from "react";
-import { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
+// import { useState } from "react";
+// import Carousel from "react-bootstrap/Carousel";
 import { useGlobalContext } from "./context/globalContext";
 
 const Hero = () => {
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
+  // const handleSelect = (selectedIndex) => {
+  //   setIndex(selectedIndex);
+  // };
   const { handleShowModal } = useGlobalContext();
   return (
     <div id="home" className="section">
       <div className="desktopview">
-        {/* <img
+        <img
           onClick={handleShowModal}
-          height="730"
+          height="100%"
           width="100%"
           className="d-block micro-main-slider-img ls-is-cached lazyloaded"
-          src="images/lntevaraheightsweb.webp"
+          src="images/web-banner-5.jpg"
           alt="banner"
-        /> */}
+        />
 
-        <Carousel
+        {/* <Carousel
           slide="true"
           interval="2000"
           activeIndex={index}
@@ -74,19 +74,19 @@ const Hero = () => {
               alt="banner"
             />
           </Carousel.Item>
-        </Carousel>
+        </Carousel> */}
       </div>
       <div className="mobileview">
-        {/* <img
+        <img
           onClick={handleShowModal}
-          height="vh-85"
+          height="100%"
           width="100%"
           className="d-block micro-main-slider-img ls-is-cached lazyloaded"
-          src="images/lntevaraheightsweb.webp"
-          alt="L&T Evara Heights Thane Mobile Banner, L&T Evara Heights Mobile Banner"
-        /> */}
+          src="images/mob-banner-4.jpg"
+          alt="micl jade park banner"
+        />
 
-        <Carousel
+        {/* <Carousel
           slide="true"
           interval="2000"
           activeIndex={index}
@@ -127,7 +127,7 @@ const Hero = () => {
               alt="banner"
             />
           </Carousel.Item>
-        </Carousel>
+        </Carousel> */}
       </div>
     </div>
   );

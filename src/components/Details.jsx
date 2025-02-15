@@ -19,7 +19,7 @@ const Details = () => {
   }, []);
   return (
     <section className="section shadow-sm lazyloaded" id="overview">
-      <h2 className="d-block section-heading color-primary text-capitalize">
+      <h2 className="d-block section-heading color-primary text-capitalize text-center">
         About MICL Jade Park
       </h2>
 

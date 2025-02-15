@@ -3863,6 +3863,7 @@ img {
   border-radius: 4px;
   background: #fff;
   text-align: center;
+  justify-content: space-between;
 }
 .strip-section .strip_section-row li {
   width: 24%;
