@@ -94,7 +94,7 @@ const BestQuotes = () => {
       <form
         class="form-side"
         style={{
-          marginTop: "1rem",
+          marginTop: ".5rem",
           boxShadow: "0 4px 16px rgba(0, 0, 0, 0.5)",
           paddingBottom: "1px",
         }}
@@ -109,11 +109,12 @@ const BestQuotes = () => {
             fontSize: "1rem",
           }}
         >
-          Spacious <b style={{ fontSize: "1.1rem" }}> 3, 4 & 5 </b>BHK Homes
+          Spacious <b style={{ fontSize: "1.1rem" }}> 3, 4 & 5 </b>BHK
           <br />
-          Starts at
-          {/* <br /> */}
-          <b style={{ fontSize: "1.1rem" }}> ₹ 4.90 Cr* Onwards</b>
+          Homes Starts at
+          <br />
+          <b style={{ fontSize: "1.1rem" }}> ₹ 4.90 Cr*</b>{" "}
+          <small> Onwards</small>
           <br />
           {/* <br /> */}
           {/* <small>(Largest 2 BHKs in Thane)</small> */}
@@ -1599,14 +1600,14 @@ const BestQuotes = () => {
             privacy policy.
           </p>
 
-          <span
+          {/* <span
             class="d-block text-center font-weight-bold"
             style={{ textAlign: "center" }}
           >
             {" "}
             Avail 20 x 5 Payment Plan
-          </span>
-
+          </span> */}
+          <strong className="text-center">Avail 20 x 5 Payment Plan</strong>
           <button
             type="submit"
             class="btn btn-info micro-form-btn effetMoveGradient submitBtn"
@@ -1620,7 +1621,7 @@ const BestQuotes = () => {
 
       <h5
         className="site-visit-heading animated bounceIn infinite"
-        style={{ marginTop: "20px" }}
+        style={{ marginTop: "10px" }}
       >
         <span className="form-last-heading lazyloaded" data-expand="-1">
           <img className="lazyloaded" src="images/cab.svg" alt="ola logo" />{" "}

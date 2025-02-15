@@ -100,7 +100,8 @@ const NewForm = () => {
         <br />
         Starts at
         <br />
-        <b style={{ fontSize: "1.25rem" }}>₹ 4.90 Cr* Onwards</b> Onwards
+        <b style={{ fontSize: "1.25rem" }}>₹ 4.90 Cr*</b>{" "}
+        <small> Onwards</small>
         <br />
         {/* <br /> */}
         {/* <small>(Largest 2 BHKs in Thane)</small> */}
